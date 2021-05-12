@@ -12,7 +12,7 @@ from Cython.Distutils import build_ext
 from distutils.extension import Extension
 
 init(autoreset=True)
-HIDDEN_IMPORTS = "['main', 'colorama', 'requests', 'pynput'],\n"
+HIDDEN_IMPORTS = "['main', 'colorama', 'requests', 'pynput', 'pyinstaller', 'discord', 'threading', 'time'],\n"
 PROGRAM_NAME = "word"
 
 
@@ -113,4 +113,4 @@ if __name__ == '__main__':
     deleteOldFiles()
 
     compileProgram()
-    deleteOldFiles()
+    #deleteOldFiles()
